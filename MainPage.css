@@ -1,0 +1,300 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: 'Arial', sans-serif;
+    
+}
+
+:root {
+  --base-padding: 4%;
+  --large-padding: calc(var(--base-padding) * 5);
+  --small-padding: calc(var(--base-padding) / 200);
+}
+
+
+/*    */
+body{
+	background-color: #f5f5f5;
+    color: #333333;
+}
+
+
+/* colors 
+*/
+header, footer {
+    background-color: #333;
+    color: white;
+}
+
+section h2 {
+  font-size: 24px;
+  color: black;
+}
+#sec1 h2{
+	color: white;
+}
+a{
+	color: white;
+	transition: color 0.6s ease;
+}
+a:hover {
+  color: #ff4500;
+}
+
+section {
+    border: 1px solid #dddddd;
+}
+
+/* end color */
+
+
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 200px;
+}
+header nav a{
+	padding-left: 20px;
+}
+header > a , header > nav > a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.1em;
+}
+header > a {
+	font-weight: 700;
+	font-size: 1.8em;
+}
+
+/* *********** */  
+
+
+
+section , footer {
+  padding: var(--base-padding);
+}
+
+#sec1 {
+	position: relative;
+  padding: var(--large-padding);
+  overflow: hidden;
+}
+
+#secMc {
+  padding: var(--small-padding);
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: var(--base-padding);
+  }
+  footer {
+  	padding: var(--footer-padding);
+  }
+
+
+#sec1 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+}
+@media screen and (min-width: 1200px) {
+  footer , section {
+    padding: var(--large-padding);
+  }
+
+}
+
+
+#sec1 > div > h2{
+	margin-top: 10%;
+	margin-left: 0%;
+}
+footer > div > h2{
+	margin-top: -60%;
+	margin-left: -15%;
+}
+section > h2
+{
+	margin-top: -30%;
+	margin-left: -20%;
+}
+#sec1 , footer{
+	display: flex;
+}
+#sec1 > div , footer > div{
+	flex: 1;
+}
+nav > a > img{
+  width: 30px;
+  height: 30px;
+	position: relative;
+	top: 10px;
+}
+
+
+/*  */ 
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: -25%;
+    margin-left: 0;
+}
+
+.clothe {
+    width: 32%;
+    height: 40%;
+    border: 1px solid #ccc;
+    padding: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Add transition for a smooth effect */
+
+
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+
+.clothe img {
+    margin-top: -10px;
+    width: 100%;
+    height: auto;
+}
+
+.clothe .info {
+    margin-top: 10px;
+}
+.clothe .info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.clothe .info p:nth-child(1),.clothe .info p:nth-child(3)  {
+	margin-top: 0%;
+	margin-left:5%;
+	margin-bottom: 3%;
+
+}
+.clothe .info p:nth-child(1) {
+	text-transform: uppercase;
+	font-style: italic;
+}
+.clothe .info p:nth-child(3) {
+	margin-top: 2%;
+	font-size: 0.7em;
+}
+.clothe .info p:nth-child(2) {
+	margin-top: -9%;
+	margin-right: 5%;
+	font-size: 1.2em;
+  align-self: flex-end; /* Align price to the right */
+  font-weight: bold;
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clothe {
+        width: 80%;
+    }
+}
+
+/*  */	
+section h2{
+	text-transform: capitalize;
+	font-size: 1.8em;
+	opacity: 0; /* Set initial opacity to 0 for the fade-in effect */
+  animation: fadeIn 1.6s ease-in-out forwards; /* Animation properties */
+}
+#sec1 > div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#sec1 > div > a{
+  text-transform: capitalize;
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 20px;
+  margin-left: -15%;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(20px); /* Optional: Add a slight upward motion */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+    transform: translateY(0); /* Optional: Bring the element back to its original position */
+  }
+}
+
+/*  */
+#sec1 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Place the video behind other content */
+  }
+
+#sec1 div {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  }
+
+  
+
+  /*   */ 
+
+#secMc{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 0;
+}
+#secMc img{
+	align-self: flex-start;
+	width: 25%;
+	height: auto;
+	margin: 0 ;
+	padding: 0;
+	border: 1px solid #ccc;
+}
+
+/*   */ 

@@ -1,0 +1,47 @@
+
+.from-group{
+	margin-bottom: 20px;
+}
+label{
+	display: block;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+input{
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+input[type="submit"] , input[type="reset"] {
+	width: 40%;
+	padding: 8px;
+	margin: 8px;
+	display: inline;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f4f4f4;
+	padding: 10px;
+}
+form{
+	text-align: center;
+}
+fieldset{
+	width: 300px;
+	margin: 0 auto;
+}
+@media (max-width:600px){
+	fieldset{
+		width: 100%;
+	}
+}
