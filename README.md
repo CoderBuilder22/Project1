@@ -1,2 +1,2 @@
-# Project1
-This project aims to introduce fundamental concepts of web development , making it an ideal starting point for beginners.
+# Static E-commerce WebSite
+This project aims to practice fundamental concepts of web development, including HTML, CSS, and JavaScript.
