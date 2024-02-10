@@ -5,28 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MainPage</title>
 	<link rel="stylesheet" type="text/css" href="MainPage.css">
+	<link rel="stylesheet" type="text/css" href="HeaderFooterCommunPage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 	<header>
-		<a href="mainPage.html">Title</a>
+		<a href="mainPage.html">FashionVibes</a>
 		<nav>
 			<a href="purchase.html">
 				<img src="panier.png" alt="les achats">
 			</a>
 			<a href="MenPage.html">Men</a>
 			<a href="WomenPage.html">Women</a>
-			<a href="LogInPage.html">Log In</a>	
+			<a href="LogInPage.html" target="_blank">Log In</a>	
 		</nav>
 	</header>
 	<section id="sec1">
 		<div>
-			<a href="#sec2">Discover our product</a>
+			Elegant style, FashionVibes
 		</div>
-		<video autoplay muted loop preload="auto" playsinline>
-				<source src="multimediaMainPage\backgournd-mainpage(1).mp4" type="video/mp4">
-		</video>
-		
+		<div>
+			FashionVibes: Where trends meet individuality, creating a lasting style impression.
+		</div>
+	    <div>
+	        <a href="#sec2">Discover Our Product</a>
+	    </div>
 	</section>
+
+
 	<section id="secMc">
 		<img src="multimediaMainPage\img(5)LOGO.jpg">
 	    <img src="multimediaMainPage\img(2)LOGO.jpg">
@@ -39,6 +45,7 @@
 			<div class="clothe">
 				<img src="multimediaMainPage\img(3).jpg">
 				<div class="info">
+					<button class="add-to-cart-btn" onclick="addToCart('purchase.html')">Add to Cart</button>
 					<p>pants</p>
 					<p >60$</p>
 					<p>Description</p>
@@ -49,6 +56,7 @@
 					<img src="multimediaMainPage\img(4).jpg">
 				</div>
 				<div class="info">
+					<button class="add-to-cart-btn" onclick="addToCart('purchase.html')">Add to Cart</button>
 					<p>T-Shirt</p>
 					<p >40$</p>
 					<p>Description</p>
@@ -59,6 +67,7 @@
 					<img src="multimediaMainPage\img(7).jpg">
 				</div>
 				<div class="info">
+					<button class="add-to-cart-btn" onclick="addToCart('purchase.html')">Add to Cart</button>
 					<p>Shoes Nike-1</p>
 					<p >150$</p>
 					<p>Description</p>
@@ -75,6 +84,7 @@
 					<img src="multimediaMainPage\img(5).jpg">
 				</div>
 				<div class="info">
+					<button class="add-to-cart-btn" onclick="addToCart('purchase.html')">Add to Cart</button>
 					<p>shirt</p>
 					<p >50$</p>
 					<p>Description</p>
@@ -85,6 +95,7 @@
 					<img src="multimediaMainPage\img(6).jpg">
 				</div>
 				<div class="info">
+					<button class="add-to-cart-btn" onclick="addToCart('purchase.html')">Add to Cart</button>
 					<p>pants</p>
 					<p >70$</p>
 					<p>Description</p>
@@ -95,6 +106,7 @@
 					<img src="multimediaMainPage\img(8).jpg">
 				</div>
 				<div class="info">
+					<button class="add-to-cart-btn" onclick="addToCart('purchase.html')">Add to Cart</button>
 					<p>Shoes Nike-6</p>
 					<p >200$</p>
 					<p>Description</p>
@@ -104,23 +116,23 @@
 		</div>
 	</section>
 	<footer>
-		<div>
-			<h2>About Us</h2>
-		</div>
-		<div>
-			<h2>Social Media</h2>
-			<div>
-				<a href="#">
-				<i class="fa-brands fa-facebook"></i>
-		        </a>
-			<a href="#">
-				<i class="fa-brands fa-instagram"></i>
-			</a>
-			<a href="#">
-				<i class="fa-brands fa-linkedin"></i>
-			</a>
-			</div>
-		</div>
+	    <div>
+	        <h2>About Us</h2>
+	        <p>Welcome to Our Website! Learn more about our mission and values.</p>
+	    </div>
+	    <div>
+	        <h2>Social Media</h2>
+			<a href="https://www.facebook.com/your-page" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+		    <a href="https://twitter.com/your-handle" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+		    <a href="https://www.instagram.com/your-account" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+	    </div>
+	    <div>
+	        <h2>Contact Us</h2>
+	        <p>Email: FashionVibes@gmail.com</p>
+	        <p>Phone: +1 (123) 456-7890</p>
+	        <p>Address: 123 Street, Rades, Tunis</p>
+	    </div>
 	</footer>
+	<script src="scriptCart.js"></script>
 </body>
 </html>

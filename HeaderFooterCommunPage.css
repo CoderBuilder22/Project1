@@ -1,0 +1,179 @@
+/* header part */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+}
+
+section h2 {
+  font-size: 24px;
+  color: black;
+}
+
+header a {
+  color: white;
+  transition: color 0.6s ease;
+}
+
+header a:hover {
+  color: #ff4500;
+}
+
+section {
+  border: 1px solid #dddddd;
+}
+#sec4{
+    border-left: none;
+    border-right: none;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+}
+
+header nav a {
+  padding-left: 20px;
+}
+
+header > a, header > nav > a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+header > nav > a {
+  text-transform: uppercase;
+}
+header > a {
+  font-weight: 700;
+  font-size: 1.9em;
+}
+
+
+header img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+}
+
+
+/* footer part */
+footer {
+    padding: 3vw; 
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer > div > h2 {
+    margin-top: -40px;
+}
+footer > div > p{
+  margin-top: 20px;
+}
+footer > div > a > i{
+  padding: 5px 5px;
+  color: white;
+  margin-top:5px;
+}
+
+
+/* section1 part */
+
+#sec1 {
+    padding: 22vw;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#sec1 > div{
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sec1 > div:nth-child(1) {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+#sec1 > div:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+
+#sec1 > div:nth-child(2){
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.7);
+    font-style: italic;
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+#sec1 > div:nth-child(3) > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8);
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 20px; 
+    border-radius: 50px;
+    margin-top: 10px;
+}
+#sec1 > div:nth-child(3) > a:hover{
+    background-color: rgba(51, 51, 51, 1);
+}
+#sec1 > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* add cart code */
+.clothe{
+  position: relative;
+}
+.add-to-cart-btn {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    background-color: rgba(51, 51, 51, 0.6);
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: rgba(51, 51, 51, 1);
+}

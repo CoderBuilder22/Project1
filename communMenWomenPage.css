@@ -1,0 +1,127 @@
+
+
+
+/* sec1 is backgournd-image */ 
+
+#sec4 {
+    padding: 3vw; /* Small padding for sec2 (2% of the viewport width) */
+}
+
+#sec3 {
+    padding: 25vw; /* Base padding for sec3 (5% of the viewport width) */
+}
+
+
+/* clothe adjusement */ 
+#sec3{
+	padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Updated to repeat(4, 1fr) for four columns */
+  column-gap: 5px;
+  row-gap: 20px;
+}
+#sec3 h2 {
+  grid-column: span 4; /* Set h2 to span all four columns */
+}
+
+#sec3 > .clothe {
+  width: 85%; /* Adjusted width to take up the full width of the grid column */
+  height: 100%; /* Adjusted height to take up the full height of the grid column */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+.clothe .img img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+}
+
+.clothe .info {
+    margin-top: 10px;
+}
+.clothe .info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.clothe .info p:nth-child(2),.clothe .info p:nth-child(4)  {
+	margin-top: 0%;
+	margin-left:5%;
+	margin-bottom: 3%;
+
+}
+.clothe .info p:nth-child(2) {
+	text-transform: uppercase;
+	font-style: italic;
+}
+.clothe .info p:nth-child(4) {
+	margin-top: 2%;
+	font-size: 0.7em;
+}
+.clothe .info p:nth-child(3) {
+	margin-top: -9%;
+	margin-right: 5%;
+	font-size: 1.2em;
+  align-self: flex-end; /* Align price to the right */
+  font-weight: bold;
+}
+
+
+/* fin clothe adjusement */ 
+
+
+
+
+/* media queries */
+/* fin media queries */
+
+
+/* section4 */
+#sec4{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+  margin: 0 30px;
+}
+#sec4 > div > img{
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+#sec4 > div > img:hover{
+  opacity: 0.9;
+}
+#sec4 > div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sec4 > div > h1 , #sec4 > div > a  {
+  position: absolute;
+}
+#sec4 > div > h1 {
+  top: 40%;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: capitalize;
+  font-size: 4em;
+}
+#sec4 > div > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(51, 51, 51, 0.8);
+  font-size: 0.8em;
+  padding: 10px 40px; 
+  border-radius: 40px;
+  top: 50%;
+}

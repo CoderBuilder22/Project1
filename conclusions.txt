@@ -1,0 +1,10 @@
+-layout adjusement:
+*using var(calc()):
+
+*using vw:
+
+
+-organization of carts:
+*using grid:
+grid-template-columns/rows: repeat(nbElement, 1fr);
+*using flex:
