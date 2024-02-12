@@ -112,13 +112,23 @@ footer > div > a > i{
 /* sec2   */
 
 #sec2p{
-	padding: 20vw;
+  padding: 25vw;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;  
 }
 
-#sec2p{
-	display: grid;
-	grid-template-columns: 70% auto;
+#sec2p {
+    display: grid;
+    grid-template-columns: 70% auto; /* Adjusted column widths */
+    gap: 20px;
 }
-#sec2p > div {
-	border: 1px solid #dddddd;
+
+#sec2p > div{
+  border: 1px solid #dddddd;
+}
+#sec2p > div:first-child{
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }

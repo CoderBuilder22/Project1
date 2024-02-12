@@ -14,7 +14,8 @@
 
 /* clothe adjusement */ 
 #sec3{
-	padding: 20px;
+	padding: 20px 10px;
+  padding-left: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Updated to repeat(4, 1fr) for four columns */
   column-gap: 5px;
