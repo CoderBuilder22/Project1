@@ -132,3 +132,37 @@ footer > div > a > i{
   border-left: none;
   border-right: none;
 }
+#sec2p > div:nth-child(2){
+  padding: 20px;
+}
+
+/*group */
+#sec2p > div:nth-child(2) > p:nth-child(2),#sec2p > div:nth-child(2) > p:nth-child(1){
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+#sec2p > div:nth-child(2) > p:first-child > span:first-child,#sec2p > div:nth-child(2) > p:nth-child(2) > span:first-child{
+  text-transform: uppercase;
+}
+/*prix*/
+#sec2p > div:nth-child(2) > p:nth-child(2) > span:nth-child(2) , #sec2p > div:nth-child(2) > p:nth-child(1) > span:nth-child(2){
+  position: absolute;
+  left: 200px;
+}
+#sec2p > div:nth-child(2) > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #333;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
