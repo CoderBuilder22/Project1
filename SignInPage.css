@@ -41,8 +41,20 @@ fieldset{
 	width: 300px;
 	margin: 0 auto;
 }
-@media (max-width:600px){
-	fieldset{
-		width: 100%;
-	}
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+  /* Adjustments for screens smaller than 600px wide */
+  fieldset {
+    width: 100%; /* Set the width of the fieldset to 100% for smaller screens */
+    margin: 0; /* Remove margin for smaller screens */
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%; /* Set the width of submit and reset buttons to 100% for smaller screens */
+    margin: 8px 0; /* Adjust margin for smaller screens */
+  }
 }
+

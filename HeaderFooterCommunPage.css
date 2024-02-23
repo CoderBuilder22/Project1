@@ -177,3 +177,63 @@ footer > div > a > i{
 .add-to-cart-btn:hover {
     background-color: rgba(51, 51, 51, 1);
 }
+
+
+/* Media Queries */
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 20px 20px; /* Adjust padding for smaller screens */
+  }
+
+  header nav a {
+    padding-left: 10px; /* Adjust padding for smaller screens */
+  }
+
+  header img {
+    width: 20px; /* Adjust width of the logo for smaller screens */
+    height: 20px; /* Adjust height of the logo for smaller screens */
+    top: 5px; /* Adjust position of the logo for smaller screens */
+  }
+
+  #sec1 {
+    padding: 10vw; /* Adjust padding for smaller screens */
+  }
+
+  #sec1 > div:nth-child(1) {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  #sec1 > div:nth-child(2) {
+    font-size: 1.1em; /* Adjust font size for smaller screens */
+  }
+
+  #sec1 > div:nth-child(3) > a {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 20px 100px; /* Adjust padding for medium screens */
+  }
+
+  #sec1 {
+    padding: 15vw; /* Adjust padding for medium screens */
+  }
+
+  #sec1 > div:nth-child(1) {
+    font-size: 2.3em; /* Adjust font size for medium screens */
+  }
+
+  #sec1 > div:nth-child(2) {
+    font-size: 1.2em; /* Adjust font size for medium screens */
+  }
+
+  #sec1 > div:nth-child(3) > a {
+    font-size: 1.1em; /* Adjust font size for medium screens */
+  }
+}

@@ -140,5 +140,35 @@ section h2{
   
 }
 
-/*   */ 
+
+/* Media query */
+@media (max-width: 600px) {
+  /* Adjustments for screens smaller than 600px wide */
+  #sec1 {
+    background-image: none; /* Remove background image for smaller screens */
+  }
+
+  #secMc,
+  #sec3,
+  #sec2 {
+    padding: 2vw; /* Adjust padding for smaller screens */
+  }
+
+  #sec2 > h2,
+  #sec3 > h2 {
+    margin-top: -150px; /* Adjust margin-top for smaller screens */
+  }
+
+  .clothe {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+
+  section h2 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  #secMc img {
+    width: 50%; /* Adjust width for images within secMc for smaller screens */
+  }
+}
 

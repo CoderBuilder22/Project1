@@ -111,11 +111,7 @@ section > div:nth-child(2) > a:hover{
 	background-color: #333;
 	color: white;
 }
-@media (max-width:600px){
-	fieldset{
-		width: 100%;
-	}
-}
+
 /* */
 section{
 	padding-top:8%;
@@ -145,4 +141,30 @@ section{
 }
 section > div{
 	flex: 1;
+}
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+  /* Adjustments for screens smaller than 600px wide */
+  header {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  header img {
+    width: 20px; /* Adjust width of the logo for smaller screens */
+    height: 20px; /* Adjust height of the logo for smaller screens */
+    top: 5px; /* Adjust position of the logo for smaller screens */
+  }
+
+  header > a {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  header nav a {
+    padding-left: 10px; /* Adjust padding for smaller screens */
+  }
+  fieldset{
+		width: 100%;
+	}
 }
