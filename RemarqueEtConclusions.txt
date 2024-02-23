@@ -8,3 +8,10 @@
 *using grid:
 grid-template-columns/rows: repeat(nbElement, 1fr);
 *using flex:
+
+
+-Sites to use:
+*images and videos:
+
+*colors:
+Coolors - 

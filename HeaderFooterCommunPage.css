@@ -13,7 +13,7 @@ body {
 }
 
 header, footer {
-  background-color: #333;
+  background-color: #1F5B59;
   color: white;
 }
 
@@ -22,14 +22,17 @@ section h2 {
   color: black;
 }
 
-header a {
+header a:not([href="purchase.html"]) {
+  /* Your specific styling for other <a> elements in the header except the one with href="mainPage.html" */
   color: white;
-  transition: color 0.6s ease;
+  transition: text-decoration;
 }
 
-header a:hover {
-  color: #ff4500;
+header a:not([href="purchase.html"]):hover {
+  /* Your hover styling for other <a> elements in the header except the one with href="mainPage.html" */
+  text-decoration: underline;
 }
+
 
 section {
   border: 1px solid #dddddd;
